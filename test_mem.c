@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stddef.h>
 
 #define ACCESS_COUNT 10000000
 typedef char data_t;

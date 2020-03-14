@@ -13,7 +13,7 @@ int main(int argc, char* argv[]){
 		return -1;
 	}
 	int BUTTON = atoi(argv[1]);
-	wiringPiSetup();
+	wiringPiSetupGpio();
 	pinMode(BUTTON,INPUT);
 	pullUpDnControl(BUTTON,PUD_UP);
 	

@@ -2,7 +2,7 @@
 Course project on electromagnetic wave side-channel attack
 ## Team Members
 * Jiawei Zhang
-* Lei Zhao
+* Zhao Lei
 * Zeyu Wang
 
 ## Links

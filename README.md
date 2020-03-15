@@ -1,10 +1,9 @@
 # ECE209AS_IoT
 Course project on electromagnetic wave side-channel attack
-# Project IBID: Interaction Between Intelligent Devices
-
 ## Team Members
+* Jiawei Zhang
+* Lei Zhao
 * Zeyu Wang
-* Yifan Xu
 
 ## Links
 ### Project Repositories

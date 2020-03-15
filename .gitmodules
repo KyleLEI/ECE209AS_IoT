@@ -1,3 +1,0 @@
-[submodule "algorithms/Pi-calculation"]
-	path = algorithms/Pi-calculation
-	url = git@github.com:andreaponza/Pi-calculation.git

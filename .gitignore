@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+

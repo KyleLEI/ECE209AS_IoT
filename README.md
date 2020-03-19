@@ -7,9 +7,9 @@ Course project on electromagnetic wave side-channel attack
 
 ## Links
 ### Project Repositories
-[Github](https://github.com/KyleLEI/ECE209AS_IoT "Check All Codes")
+[Github](https://github.com/KyleLEI/ECE209AS_IoT"Check All Codes")
 ### Final Presentation Video
-[Youtube](https://studio.youtube.com/video/t7B0CVJgKWM "Jump to Youtube")
+[Youtube](https://www.youtube.com/watch?v=0kZYEDo6shQ"Jump to Youtube")
 
 ------------------------------
 

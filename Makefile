@@ -1,13 +1,9 @@
-all: test_time test_mem
+all: raspberry_loops
 dummy: clean
-test_time.o: test_time.c
-	gcc -c -g -O0 -o $@ test_time.c
-test_time: test_time.o
-	gcc -o $@ test_time.o
-test_mem.o: test_mem.c
-	gcc -c -g -O0 -o $@ test_mem.c
-	gcc -S test_mem.c
-test_mem: test_mem.o
-	gcc -o $@ test_mem.o
+raspberry_loops.o: raspberry_loops.c
+	gcc -c -g -O0 -o $@ raspberry_loops.c
+	gcc -S raspberry_loops.c
+raspberry_loops: raspberry_loops.o
+	gcc -o $@ raspberry_loops.o
 clean:
-	rm -f test_time.o test_time test_mem.o test_mem test_mem.s
+	rm -f raspberry_loops.o raspberry_loops

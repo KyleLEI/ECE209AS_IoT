@@ -13,7 +13,9 @@ Side-channel attack using electromagnetic emanation from IoT device
 
 ------------------------------
 
-## Introduction and motivation (JZ)
+## Introduction and motivation
+Side-channel attacks are widely explored in the recent decades, such as power analysis and time measurement. Many investigations on electromagnetic leakage are also conducted, such as potential for attack, program profiling.
+For ECE209AS course project, we reproduced the previous paper's result, and further extend scope of experiments to three different platforms. Not only analyzing the effectiveness on different platform, we are build additional machine learning model to better predict the result algorithm running and our project also handles the interrupt event as well.  
 
 ## Background knowledge  
 ### Prior work on Side-Channel attack

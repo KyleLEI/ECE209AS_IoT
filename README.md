@@ -34,7 +34,7 @@ Side-channel attack using electromagnetic emanation from IoT device
   * Format: (frequency, amplitude)
   * High dimensional
   * Small number of data points
-<div align=center><src="https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B109%3Bp20.png"/></div>
+<div align=center><src="https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B110%3Bp20.png"/></div>
       
 * Classifier: Support Vector Machine
   * Small dataset -> 3-fold cross validation

@@ -19,19 +19,13 @@ Side-channel attacks are widely explored in the recent decades, such as power an
 For ECE209AS course project, we reproduced the previous paper's result, and further extend scope of experiments to three different platforms. Not only analyzing the effectiveness on different platform, we are build additional machine learning model to better predict the result algorithm running and our project also handles the interrupt event as well.
 #### Goal
 To build a algorithm for autopilot vehicles, which can provide a reliable communication protocol between two or more vehicles.
-#### Deliverable
+#### Contribution
 Instead of adding onboard sensors, we want to make the following car to be blind but auto-pilotable basing on the information shared from the leading car. 
 
 ## Hardware Used in This Porject
 * Arduino Uno
 * Raspberry Pi 3B+
-* HCSR04 Ultrasonic Sensor
-* IR Dectector
-* L298N Motor Drive Controller
-* HC-05 Bluetooth Chip
-* ESP8266 WiFi Chip
-* Feasycom Long Range Bluetooth iBeacons
-* Echo Dot V3
+* STM32 H7 nucleo board
 
 ## Part 1: Interaction between Two Cars: Car Following Algorithm
 ### Design & Features

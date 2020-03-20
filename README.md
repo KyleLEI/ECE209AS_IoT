@@ -37,7 +37,7 @@ Side-channel attack using electromagnetic emanation from IoT device
 
 ### Spectrum analyzer measurement (JZ) 
 
-### Machine learning model (LZ)
+### Machine learning model
 #### Input data
 The spectrum analyzer outputs data in the format of **(frequency,amplitude)** for each sweep. The number of frequencies available depends on the start, stop frequency, as well as the step size we select. These measurements are also ideal features for classification, in that they are mutually-exclusive and has already been transferred to the frequency domain. 
 
@@ -52,12 +52,35 @@ To further combat the dataset size problem, we decide to implement **3-fold cros
 
 As for the classification output, we have already labeled each spectrum with the **ID of the loop** the underlying processor is running. For example, 1 means the processor is running a `print` function and a floating point addition, while 2 means a floating point addition without the `print` function.
 
+The structure of our machine-learning setup is shown below
+
+![Machine Learning Structure](pictures/svm_structure.png)
+
 #### Metrics
-The testing accuracy is obviously a key metric in our implementation. Specifically, if, given the training data, the classifier is able to distinguish between different loops in the testing set with high accuracy, we have succeeded. But to understand what caused the inaccuracies, we can also use a **confusion matrix**. If the numbers on its diagonal are large, with others close to 0, it means the classifier classified the input into the correct catagories with few mis-classifications.
+The testing accuracy is obviously a key metric in our implementation. Specifically, if, given the training data, the classifier is able to distinguish between different loops in the testing set with high accuracy, we have succeeded. But to understand what caused the inaccuracies, we can also use a **confusion matrix**. If the numbers on its diagonal are large, with others close to 0, it means the classifier classified the input into the correct categories with few mis-classifications.
 
-### Result  (LZ)
+### Result
+The confusion matrices for each of our platform is shown below. It is quite obvious that our classifier is able to distinguish between different control loops perfectly. From this, we can deduce the execution path the program has chosen based on some secrets, and consequently extract the underlying secret. 
+#### Arduino
+![Arduino result](pictures/Google%20Shape%3B180%3Bp28.png)
 
-## Conclusion  (LZ)
+#### STM32
+![STM32 result](pictures/Google%20Shape%3B187%3Bp29.png)
+
+#### Raspberry Pi
+![Raspberry Pi result](pictures/Google%20Shape%3B195%3Bp30.png)
+
+## Conclusion
+Building upon previous work on EM emanation side-channel attacks, we implemented our own attack targeting program loopings on our own platforms. We successfully determined the program execution path based on its unintentional EM emanation. 
+
+In addition to prior works on this subject, we built and tested a machine learning classifier to determine the loop that is producing an EM wave pattern. This would enable automated EM side-channel attacks, specifically a pipeline where the data collection, processing and classification works in tandem to automatically extract the program execution path and the corresponding secret that caused it. 
+
+We also extended the application of such an attack on different IoT platforms including
+ - Arduino, a popular IoT prototyping platform
+ - STM32, a ubiquitous microcontroller in IoT
+ - Raspberry Pi, a sophisticated embedded IoT computing platform
+
+Please find our source code available at [this GitHub Repository](https://github.com/KyleLEI/ECE209AS_IoT).
 
 ---------------------------------------------
 ## Experimental result  

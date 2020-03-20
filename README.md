@@ -17,26 +17,56 @@ Side-channel attack using electromagnetic emanation from IoT device
 #### Motivation
 Side-channel attacks are widely explored in the recent decades, such as power analysis and time measurement. Many investigations on electromagnetic leakage are also conducted, such as potential for attack, program profiling.  
 For ECE209AS course project, we reproduced the previous paper's result, and further extend scope of experiments to three different platforms. Not only analyzing the effectiveness on different platform, we are build additional machine learning model to better predict the result algorithm running and our project also handles the interrupt event as well.
-#### Goal
-To build a algorithm for autopilot vehicles, which can provide a reliable communication protocol between two or more vehicles.
-#### Contribution
-Instead of adding onboard sensors, we want to make the following car to be blind but auto-pilotable basing on the information shared from the leading car. 
+
+#### Overall Project Goals
+* Measure and process the electromagnetic leakage information from different IoT processors.
+* Leverage electromagnetic emanation information to deduce the algorithm currently running.
+* Build and compare machine learning algorithm to classify process being runned.
+* Expand this analyzing method to multiple platform and compare the result from different processors.
+
+
+#### Specific Aims
+* Being able to take measurement and process spectrum information on IoT platform.
+* Build execution paths with interrupts, different mathematical processes and controlled loops.
+* Deduct the execution path chosen by analyzing electromagnetic information.
+* Build and compare different machine learning models to perform the deduction automatically.
+* Extending this method to three platforms - Raspberry Pi, STM32, and Arduino.
+
 
 ## Hardware Used in This Porject
 * Arduino Uno
 * Raspberry Pi 3B+
 * STM32 H7 nucleo board
+* Spectrum analyzer
 
-## Part 1: Interaction between Two Cars: Car Following Algorithm
-### Design & Features
-* Leading car have multiple sensors, following car have no sensor.
-* Leading car transmits detected environment information to the following car.
-* Leading car controls the following car by command signals via Bluetooth channel.
+## Technical Approach 
+### EM Side-channel
+* EM wave will be generated because of the processor’s switching activity.
+  * Processor with higher power consumption is easier to measure
+  * Processor with a metal shield is almost impossible to probe
+* Looping of a program will cause periodic EM wave generation.
+  * Many operations will include looping of some basic function modules
+* System’s optimization and interrupts will cause some volatility in the measurement result.
+  * So we created machine learning models to build more robust algorithm based on the training data.
+* Measurement technique is based on real-world experiments
+  * Setting of spectrum analyzer determines the accuracy of dataset.
+  * Placement of the probe matters.
+  * Consistency in setup is important, but contrary situation can help us as well.
 
-### Demo: Two Car Following
-[![Demo Video](/Src/Demo1.png)](https://www.youtube.com/watch?v=8CCx7NysUWU)
 
-### Test Code and Instructions
+### Machine Learning Classifier
+* Spectrum analyzer output
+  * Format: (frequency, amplitude)
+  * High dimensional
+  * Small number of data points
+* Classifier: Support Vector Machine
+  * Small dataset -> 3-fold cross validation
+  * Prevent overfitting -> dimensionality reduction
+  * Different kernel: linear & radial basis function
+* Key metric: testing accuracy
+
+
+### 
 #### Raspberry Pi GPIO Connection
 ![GPIO](/Src/GPIO.png)
 

@@ -53,7 +53,8 @@ And our Specific Aims are:
 
 ## Proposed method 
 
-### Overall process (JZ)
+### Overall process
+The complete process of our methodology consists of EM measurement and data processing part. In EM measurement, we will measure the electromagnetic emanation leakage from the processor across frequency. And result data will be saved in a cvs file to be processed by our machine learning model.  
 
 ### Spectrum analyzer measurement (JZ) 
 

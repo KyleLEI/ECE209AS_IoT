@@ -28,6 +28,22 @@ Side-channel attack using electromagnetic emanation from IoT device
 ### Spectrum analyzer measurement (JZ) 
 
 ### Machine learning model (LZ)
+#### Input data
+The spectrum analyzer outputs data in the format of **(frequency,amplitude)** for each sweep. The number of frequencies available depends on the start, stop frequency, as well as the step size we select. These measurements are also ideal features for classification, in that they are mutually-exclusive and has already been transferred to the frequency domain. 
+
+Although there are some obvious challenges we have to deal with when processing said data. We observe the data has the following properties:
+ - High dimensional
+ - Small number of data points
+
+#### Classifier
+The high dimensional aspect hints at a deep learning model being implemented, but the small number of samples will render deep learning ineffective. So we chose to go with a more traditional machine-learning approach. Namely first reducing the data dimension via methods such as **PCA**. Then we feed the processed data to a classifier that works well with a small dataset, a **support vector machine(SVM)**.
+
+To further combat the dataset size problem, we decide to implement **3-fold cross validation**. This enables us to examine whether the spectrum data can be correctly classified according to the control loop it corresponds to.
+
+As for the classification output, we have already labeled each spectrum with the **ID of the loop** the underlying processor is running. For example, 1 means the processor is running a `print` function and a floating point addition, while 2 means a floating point addition without the `print` function.
+
+#### Metrics
+The testing accuracy is obviously a key metric in our implementation. Specifically, if, given the training data, the classifier is able to distinguish between different loops in the testing set with high accuracy, we have succeeded. But to understand what caused the inaccuracies, we can also use a **confusion matrix**. If the numbers on its diagonal are large, with others close to 0, it means the classifier classified the input into the correct catagories with few mis-classifications.
 
 ### Result  (LZ)
 

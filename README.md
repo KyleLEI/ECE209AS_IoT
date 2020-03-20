@@ -103,29 +103,3 @@ We also extended the application of such an attack on different IoT platforms in
 Please find our source code available at [this GitHub Repository](https://github.com/KyleLEI/ECE209AS_IoT).
 
 ---------------------------------------------
-## Experimental result  
-#### Motivation
-Side-channel attacks are widely explored in the recent decades, such as power analysis and time measurement. Many investigations on electromagnetic leakage are also conducted, such as potential for attack, program profiling.  
-For ECE209AS course project, we reproduced the previous paper's result, and further extend scope of experiments to three different platforms. Not only analyzing the effectiveness on different platform, we are build additional machine learning model to better predict the result algorithm running and our project also handles the interrupt event as well.
-
-#### Overall Project Goals
-* Measure and process the electromagnetic leakage information from different IoT processors.
-* Leverage electromagnetic emanation information to deduce the algorithm currently running.
-* Build and compare machine learning algorithm to classify process being runned.
-* Expand this analyzing method to multiple platform and compare the result from different processors.
-
-
-#### Specific Aims
-* Being able to take measurement and process spectrum information on IoT platform.
-* Build execution paths with interrupts, different mathematical processes and controlled loops.
-* Deduct the execution path chosen by analyzing electromagnetic information.
-* Build and compare different machine learning models to perform the deduction automatically.
-* Extending this method to three platforms - Raspberry Pi, STM32, and Arduino.
-
-
-## Hardware Used in This Porject
-* Arduino Uno
-* Raspberry Pi 3B+
-* STM32 H7 nucleo board
-* Spectrum analyzer
-

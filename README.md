@@ -40,7 +40,7 @@ Side-channel attack using electromagnetic emanation from IoT device
   * Small dataset -> 3-fold cross validation
   * Prevent overfitting -> dimensionality reduction
   * Different kernel: linear & radial basis function
-![classifier] (https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B110%3Bp20.png)
+![classifier](https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B110%3Bp20.png)
 * Key metric: testing accuracy 
 
 

@@ -56,8 +56,9 @@ And our Specific Aims are:
 ### Overall process
 The complete process of our methodology consists of EM measurement and data processing part. In EM measurement, we will measure the electromagnetic emanation leakage from the processor across frequency. And result data will be saved in a cvs file to be processed by our machine learning model.  
 
-### Spectrum analyzer measurement (JZ) 
-
+### Spectrum analyzer measurement
+Taking good measurement in this experiment requires good orientation of the probe and the right setting. For different processor, we are aiming at different clock frequencies. For example, STM32 has the clock frequency of 480MHz, Arduino has the clock frequency of 16MHz and Raspberry Pi has the clock frequency of 1.5GHz. For each of them, different probe needs to be used to reduce the noise level.  
+In addition orientation of the probe matters, 
 ### Machine learning model
 #### Input data
 The spectrum analyzer outputs data in the format of **(frequency,amplitude)** for each sweep. The number of frequencies available depends on the start, stop frequency, as well as the step size we select. These measurements are also ideal features for classification, in that they are mutually-exclusive and has already been transferred to the frequency domain. 

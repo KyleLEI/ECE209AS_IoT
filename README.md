@@ -35,7 +35,7 @@ Side-channel attack using electromagnetic emanation from IoT device
   * A support vector machine (SVM) is a supervised machine learning model that uses classification algorithms for two-group classification problems. After giving an SVM model sets of labeled training data for either of two categories, they’re able to categorize new examples.
 * Principal component analysis(PCA)
   * Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components. 
-![SVM](https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/svm.png)
+
 ## Proposed method 
 
 ### Overall process (JZ)

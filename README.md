@@ -1,5 +1,5 @@
 # ECE209AS_IoT
-Course project on electromagnetic wave side-channel attack
+Side-channel attack using electromagnetic emanation from IoT device 
 ## Team Members
 * Jiawei Zhang
 * Zhao Lei
@@ -15,7 +15,8 @@ Course project on electromagnetic wave side-channel attack
 
 ## Project Introduction
 #### Motivation
-The original ideas of this project come from one simple question: What if all vehicles on the road are autopiloted? Obviously, drivers like me will be free from manual operations, which is not only boring but also very risky. But, what else? In recent years, we have witnessed a great improvement in Autonomous Vehicles' algorithm, which makes these questions very realistic. Although companies like Tesla and Amazon have already operating Autonomous Vehicles business somehow, those autopiloting cars on the road are working alone. In another word, they assume all other vehicles are human-operated. Therefore, if more than one autonomous vehicles are nearby, should they communicate with each other to bring a better understanding of the environment? Will this kind of extra information help the built-in algorithm to work better? Can this kind of information sharing benefit traffic in the future? We decide to do some research.
+Side-channel attacks are widely explored in the recent decades, such as power analysis and time measurement. Many investigations on electromagnetic leakage are also conducted, such as potential for attack, program profiling.
+For ECE209AS course project, we reproduced the previous paper's result, and further extend scope of experiments to three different platforms. Not only analyzing the effectiveness on different platform, we are build additional machine learning model to better predict the result algorithm running and our project also handles the interrupt event as well.
 #### Goal
 To build a algorithm for autopilot vehicles, which can provide a reliable communication protocol between two or more vehicles.
 #### Deliverable

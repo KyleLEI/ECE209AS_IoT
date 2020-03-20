@@ -1,0 +1,10 @@
+11:15:15 **** Incremental Build of configuration Debug for project MultipleFrequency ****
+make -j12 all 
+arm-none-eabi-size   MultipleFrequency.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34524	    216	   2904	  37644	   930c	MultipleFrequency.elf
+Finished building: default.size.stdout
+ 
+
+11:15:16 Build Finished. 0 errors, 0 warnings. (took 1s.0ms)
+

@@ -1,0 +1,40 @@
+11:15:12 **** Incremental Build of configuration Debug for project MultipleFrequency ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/STM32H7xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:7: warning: unused variable 'mode_5' [-Wunused-variable]
+   int mode_5=0;
+       ^~~~~~
+../Core/Src/main.c:130:7: warning: unused variable 'mode_4' [-Wunused-variable]
+   int mode_4=0;
+       ^~~~~~
+../Core/Src/main.c:129:7: warning: unused variable 'mode_3' [-Wunused-variable]
+   int mode_3=0;
+       ^~~~~~
+../Core/Src/main.c:128:7: warning: unused variable 'mode_2' [-Wunused-variable]
+   int mode_2=0;
+       ^~~~~~
+../Core/Src/main.c:127:7: warning: unused variable 'mode_1' [-Wunused-variable]
+   int mode_1=0;
+       ^~~~~~
+arm-none-eabi-gcc -o "MultipleFrequency.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\google_drive\Charlie\School\UCLA-EE209AS-Security\Finaly project\STM32\MultipleFrequency\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultipleFrequency.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MultipleFrequency.elf
+ 
+arm-none-eabi-objdump -h -S  MultipleFrequency.elf  > "MultipleFrequency.list"
+arm-none-eabi-objcopy  -O binary  MultipleFrequency.elf  "MultipleFrequency.bin"
+arm-none-eabi-size   MultipleFrequency.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34524	    216	   2904	  37644	   930c	MultipleFrequency.elf
+Finished building: default.size.stdout
+ 
+Finished building: MultipleFrequency.bin
+ 
+Finished building: MultipleFrequency.list
+ 
+11:15:15 **** Incremental Build of configuration Debug for project MultipleFrequency ****
+make -j12 all 
+arm-none-eabi-size   MultipleFrequency.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34524	    216	   2904	  37644	   930c	MultipleFrequency.elf
+Finished building: default.size.stdout
+ 

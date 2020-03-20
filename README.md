@@ -30,19 +30,6 @@ Side-channel attack using electromagnetic emanation from IoT device
   * Consistency in setup is important, but contrary situation can help us as well.
 
 ### Prior work on machine learning classifier
-* Spectrum analyzer output
-  * Format: (frequency, amplitude)
-  * High dimensional
-  * Small number of data points
-
-     ![specturm](https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B109%3Bp20.png) 
-* Classifier: Support Vector Machine
-  * Small dataset -> 3-fold cross validation
-  * Prevent overfitting -> dimensionality reduction
-  * Different kernel: linear & radial basis function
-![classifier](https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B110%3Bp20.png)
-* Key metric: testing accuracy 
-
 
 ## Proposed method 
 

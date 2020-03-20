@@ -13,25 +13,25 @@ Side-channel attack using electromagnetic emanation from IoT device
 
 ------------------------------
 
-## Introduction and motivation 
+## Introduction and motivation (JZ)
 
 ## Background knowledge  
 
-### Prior work on Side-Channel attack
+### Prior work on Side-Channel attack (ZY)
 
-### Prior work on information extraction with EM emanation leakage
+### Prior work on information extraction with EM emanation leakage (ZY)
 
 ## Proposed method 
 
-### Overall process
+### Overall process (JZ)
 
-### Spectrum analyzer measurement  
+### Spectrum analyzer measurement (JZ) 
 
-### Machine learning model
+### Machine learning model (LZ)
 
-### Result  
+### Result  (LZ)
 
-## Conclusion  
+## Conclusion  (LZ)
 
 ---------------------------------------------
 ## Experimental result  

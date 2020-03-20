@@ -35,7 +35,7 @@ Side-channel attack using electromagnetic emanation from IoT device
   * High dimensional
   * Small number of data points
 
-![Spectrum](/pictures/Google Shape;109;p20.png) 
+![Spectrum]() 
 * Classifier: Support Vector Machine
   * Small dataset -> 3-fold cross validation
   * Prevent overfitting -> dimensionality reduction

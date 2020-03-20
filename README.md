@@ -16,10 +16,31 @@ Side-channel attack using electromagnetic emanation from IoT device
 ## Introduction and motivation (JZ)
 
 ## Background knowledge  
+### Prior work on Side-Channel attack
+* EM wave will be generated because of the processor’s switching activity.
+  * Processor with higher power consumption is easier to measure
+  * Processor with a metal shield is almost impossible to probe
+* Looping of a program will cause periodic EM wave generation.
+  * Many operations will include looping of some basic function modules
+* System’s optimization and interrupts will cause some volatility in the measurement result.
+  * So we created machine learning models to build more robust algorithm based on the training data.
+* Measurement technique is based on real-world experiments
+  * Setting of spectrum analyzer determines the accuracy of dataset.
+  * Placement of the probe matters.
+  * Consistency in setup is important, but contrary situation can help us as well.
 
-### Prior work on Side-Channel attack (ZY)
+### Prior work on machine learning classifier
+* Spectrum analyzer output
+  * Format: (frequency, amplitude)
+  * High dimensional
+  * Small number of data points
+ ![Spectrum](/pictures/Google Shape;109;p20.png) 
+* Classifier: Support Vector Machine
+  * Small dataset -> 3-fold cross validation
+  * Prevent overfitting -> dimensionality reduction
+  * Different kernel: linear & radial basis function
+* Key metric: testing accuracy 
 
-### Prior work on information extraction with EM emanation leakage (ZY)
 
 ## Proposed method 
 

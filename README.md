@@ -62,16 +62,16 @@ In addition, the orientation of the probe matters we found out the parallel to t
 For the setting of the spectrum analyzer, we set start and stop frequency range to as close to target platform's clock frequency as possible. It will give us a faster sweep speed. And we set the step frequency to at most half the frequency of the slowest loop. It can help us get accurate measurement to distinguish different loop programs.  
 
 ### Hardware being used
-![Spectrum analyzer](pictures/Google%20Shape%3B117%3Bp21.png)
+![Spectrum analyzer](pictures/Google%20Shape%3B117%3Bp21.png)  
 Signal Hound USB-SA44B (1Hz to 4.4GHz)
 
-![STM32 Nucelo Board](pictures/Google%20Shape%3B127%3Bp22.png)
+![STM32 Nucelo Board](pictures/Google%20Shape%3B127%3Bp22.png)  
 STM32 H7 Nucelo Board
 
-![Raspberry Pi 3](pictures/Google%20Shape%3B125%3Bp22.png)
+![Raspberry Pi 3](pictures/Google%20Shape%3B125%3Bp22.png)  
 Raspberry Pi 3
 
-![Arduino UNO](pictures/Google%20Shape%3B126%3Bp22.png)
+![Arduino UNO](pictures/Google%20Shape%3B126%3Bp22.png)  
 Arduino UNO
 
 ### Machine learning model

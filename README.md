@@ -58,7 +58,9 @@ The complete process of our methodology consists of EM measurement and data proc
 
 ### Spectrum analyzer measurement
 Taking good measurement in this experiment requires good orientation of the probe and the right setting. For different processor, we are aiming at different clock frequencies. For example, STM32 has the clock frequency of 480MHz, Arduino has the clock frequency of 16MHz and Raspberry Pi has the clock frequency of 1.5GHz. For each of them, different probe needs to be used to reduce the noise level.  
-In addition orientation of the probe matters, 
+In addition, the orientation of the probe matters we found out the parallel to the processor gives us best signal strength. And we experimentally found the position of the probe that can receive strongest signal.  
+For the setting of the spectrum analyzer, we set start and stop frequency range to as close to target platform's clock frequency as possible. It will give us a faster sweep speed. And we set the step frequency to at most half the frequency of the slowest loop. It can help us get accurate measurement to distinguish different loop programs.  
+ 
 ### Machine learning model
 #### Input data
 The spectrum analyzer outputs data in the format of **(frequency,amplitude)** for each sweep. The number of frequencies available depends on the start, stop frequency, as well as the step size we select. These measurements are also ideal features for classification, in that they are mutually-exclusive and has already been transferred to the frequency domain. 

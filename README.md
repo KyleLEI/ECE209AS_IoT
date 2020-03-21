@@ -43,6 +43,9 @@ And our Specific Aims are:
   * Setting of spectrum analyzer determines the accuracy of dataset.
   * Placement of the probe matters.
   * Consistency in setup is important, but contrary situation can help us as well.
+* Reference: 
+  D. Genkin et al., “Stealing Keys from PCs Using a Radio: Cheap Electromagnetic Attacks on Windowed Exponentiation,” in CHES 2015. Springer, Berlin, Heidelberg, Sep. 2015, pp. 207–228.
+  D. Das et al., “ASNI: Attenuated Signature Noise Injection for LowOverhead Power Side-Channel Attack Immunity,” IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1–12, 2018.
   ![specturm](https://github.com/KyleLEI/ECE209AS_IoT/blob/master/pictures/Google%20Shape%3B109%3Bp20.png)
 
 ### Prior work on machine learning classifier
